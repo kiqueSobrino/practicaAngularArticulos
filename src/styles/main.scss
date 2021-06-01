@@ -1,0 +1,19 @@
+@import './base/reset';
+@import './abstracts/variables';
+@import './base/typography';
+@import './layout/containers';
+@import './components/tables';
+@import './components/headings';
+
+
+/* Generales */
+
+html {
+    font-size: 18px;
+}
+
+
+body {
+    font-family: $regular-font-family;
+    color: $regular-font-color;
+}

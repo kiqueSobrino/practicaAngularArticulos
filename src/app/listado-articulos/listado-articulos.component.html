@@ -1,0 +1,20 @@
+ <table>
+    <thead>
+        <tr>
+            <th>Artículo</th>
+            <th>Categoría</th>
+            <th>Stock</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articulo of articulos">
+            <td>{{articulo.nombre}}</td>
+            <td>{{articulo.categoria}}</td>
+            <td class="number" *ngIf="articulo.stock > 0">{{articulo.stock}}</td>
+            <td class="number no-stock" *ngIf="articulo.stock <= 0">Sin stock</td>
+            <td class="number">{{articulo.precio}}</td>
+        </tr>
+    </tbody>
+</table>
+
